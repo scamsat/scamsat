@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+	margin: 0;
+	text-decoration: none;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.saldo {
+	color: #fff;
+	font-weight: bold;
+	font-family: arial;
+	background-color: green;
+	max-width: 100%;
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 80px;
+	height: 60vh;
+	border-radius: 20px;
+}
+.saldo .continuacion {
+}
+.saldo .continuacion .text {
+	font-size: 30px;
+	padding-top: 80px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.saldo .continuacion .text i {
+	padding-bottom: 20px;
+	padding-top: 10px;
+	font-size: 100px;
+}
+.saldo .continuacion .text a {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 80px;
+	background-color: #149dcc;
+	color: #fff;
+}
+@media screen and (max-width: 800px) {
+	.saldo {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}

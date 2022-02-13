@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.fixed {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+}
+.navbar {
+    max-width: 100%;
+}
+.navbar .navbar-header img {
+    width: 100px;
+}
+.navbar .navbar-header {
+    background-color: #0C231E;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.navbar .navbar-header .navbar-brand {
+    text-decoration: none;
+    padding-left: 90px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+}
+.navbar .navbar-header .navbar-toggler {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbar-header .navbar-toggler span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    display: flex;
+    background-color: #ffffff;
+    transition: transform 250ms linear;
+}
+.navbar .navbar-header .navbar-toggler span::after, .navbar .navbar-header .navbar-toggler span::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 250ms linear;
+}
+.navbar .navbar-header .navbar-toggler span::after {
+    transform: translateY(10px);
+}
+.navbar .navbar-header .navbar-toggler span::before {
+    transform: translateY(-10px);
+}
+.navbar .navbar-header .navbar-toggler.active span {
+    background-color: transparent;
+}
+.navbar .navbar-header .navbar-toggler.active span::after {
+    transform: rotate(45deg) scale(1.2);
+}
+.navbar .navbar-header .navbar-toggler.active span::before {
+    transform: rotate(-45deg) scale(1.2);
+}
+.navbar .navbar-collapse {
+    padding-right: 50px;
+    position: absolute;
+    background-color: #0C231E;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 400ms linear;
+}
+.navbar .navbar-collapse.active {
+    transform: scaleY(1);
+}
+.navbar .navbar-collapse .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    text-align: center;
+    font-size: 14px;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 8px 12px;
+    transition: color 300ms ease, background-color 300ms ease-in-out;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    background-color: transparent;
+    color: #9B7554;
+}
+.facturation {
+    width: 100%;
+    background-color: #13322B;
+}
+.facturation .text_facturation {
+    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.facturation .text_facturation h1 {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.desing {
+    background-color: #fff;
+    height: 110px;
+}
+@media screen and (min-width: 800px) {
+    .navbar {
+        width: 100%;
+        background-color: #0C231E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+    }
+    .navbar .navbar-header {
+        display: initial;
+        padding: 0;
+    }
+    .navbar .navbar-header .navbar-brand {
+        font-size: 22px;
+    }
+    .navbar .navbar-header .navbar-toggler {
+        display: none;
+    }
+    .navbar .navbar-collapse {
+        position: initial;
+        width: auto;
+        background-color: transparent;
+        transform: scaleY(1);
+    }
+    .navbar .navbar-collapse .navbar-nav {
+        display: flex;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item {
+        font-size: 16px;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) {
+        margin-right: 10px;
+    }
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        padding: 10px 14px;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+    .transport_web {
+        padding-left: 50px;
+    }
+}
+/*Desing*/
+
+.desing {
+    max-width: 100%;
+}
+.transport_web {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 105px;
+}
+.transport_web .info_web li {
+    display: inline-block;
+}
+.transport_web .info_web li a {
+    color: #393C3E;
+}
+/*Content Desing*/
+
+.content_desing {
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+.info_sat {
+    padding-top: 15px;
+}
+.info_sat img {
+    padding-bottom: 20px;
+}
+.info_sat .text-title-sat h1 {
+    max-width: 100%;
+    font-weight: 600;
+    font-family: arial;
+    color: #545454;
+    padding-bottom: 30px;
+}
+.line_sat {
+    margin: 10px 0 70px;
+    border-top-color: #DCE0E0;
+}
+.fomulary_text {
+    max-width: 100%;
+}
+.fomulary_text h1 {
+    font-size: 20px;
+    color: #545454;
+    font-family: arial;
+}
+@media screen and (max-width: 800px) {
+    .content_desing {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .transport_web {
+        padding-left: 40px;
+    }
+    .navbar .navbar-header .navbar-brand {
+        padding-left: 25px;
+    }
+    .facturation .text_facturation {
+        padding-left: 35px;
+    }
+    .info_sat .text-title-sat h1 {
+        font-size: 20px;
+    }
+}
+/*FORMULARIO*/
+
+.formulario {
+    font-family: arial;
+    color: #545454;
+    line-height: 70px;
+    padding-top: 50px;
+}
+.formulario .grid-sat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.formulario .form-group {
+    line-height: 15px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.formulario .form-group .freeroom {
+    border: 0.5px solid rgba(100, 100, 100, .1);
+    background-color: rgba(100, 100, 100, .1);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 150px;
+}
+.formulario .form-group .freeroom::placeholder {
+    color: #545454;
+    padding-left: 10px;
+}
+.formulario .form-group input[type=text] {
+    padding-left: 10px;
+}
+.formulario .form-group input[type=mail] {
+    padding-left: 10px;
+}
+.formulario button {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    width: 300px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background-color: #13322B;
+    color: #fff;
+    border: 1px solid #13322B;
+}
+.formulario .align-feik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 900px) {
+    .formulario .grid-sat {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .formulario .form-group {
+        padding-left: 20px;
+    }
+    .formulario .form-group .freeroom {
+        width: 100%;
+    }
+}

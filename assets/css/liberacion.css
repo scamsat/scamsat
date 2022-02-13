@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.saldo-retirar {
+    color: #545454;
+    padding-right: 100px;
+    padding-top: 50px;
+    font-family: arial;
+    padding-left: 100px;
+}
+.line-sat {
+    padding-top: 50px;
+    margin: 10px 0 70px;
+    border-top-color: #DCE0E0;
+}
+.logo-mastercard img {
+    width: 300px;
+}
+form {
+    font-family: arial;
+    color: #545454;
+    line-height: 70px;
+    padding-top: 20px;
+}
+form .style-sat-lib {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+form .sat-grid-liberacion {
+    line-height: 15px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+form .sat-grid-liberacion .free {
+    border: 0.5px solid rgba(100, 100, 100, .1);
+    background-color: rgba(100, 100, 100, .1);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 200px;
+}
+form .sat-grid-liberacion .free::placeholder {
+    padding-left: 10px;
+    padding-right: 0px;
+    width: 100%;
+}
+form .sat-grid-liberacion .date::placeholder {
+    color: #545454;
+}
+form .sat-grid-liberacion input[type=number] {
+    padding-left: 10px;
+    padding-right: -10px;
+    width: 85%;
+}
+form .sat-grid-liberacion input[type=text] {
+    padding-left: 10px;
+    width: 85%;
+}
+form .direccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .direccion button {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    width: 300px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background-color: #13322B;
+    color: #fff;
+    border: 1px solid #13322B;
+}
+@media screen and (max-width: 900px) {
+    form .style-sat-lib {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    form .sat-grid-liberacion {
+        padding-left: 0px;
+    }
+    form .sat-grid-liberacion input[type=number] {
+        padding-left: 10px;
+        padding-right: -10px;
+        width: 100%;
+    }
+    form .sat-grid-liberacion input[type=text] {
+        padding-left: 5px;
+        width: 100%;
+    }
+    .saldo-retirar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

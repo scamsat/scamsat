@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(45deg, #55b4d4, #073b4c);
+    height: 100vh;
+    max-width: 100%;
+}
+.saldo_rezagado {
+	margin: 0px;
+    font-family: arial;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label {
+	width: 100%;
+    text-align: center;
+    padding-top: 120px;
+}
+.label p {
+    font-size: 4.3rem;
+    padding-bottom: 30px;
+}
+.label h1 {
+	max-width: 100%;
+    color: #f7ed4a;
+    padding-bottom: 30px;
+}
+.label a {
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #f36;
+}
+.parrallax {
+	background-color: #fff;
+    height: 90px;
+}
+@media screen and (max-width: 900px) {
+    .label p {
+        font-size: 2rem;
+        padding: 30px; 
+        max-width: 100%;
+    }
+    .label h1 {
+        color: #f7ed4a;
+        padding-left: 10px;
+        font-size: 20px;
+        padding-right: 10px;
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+}
